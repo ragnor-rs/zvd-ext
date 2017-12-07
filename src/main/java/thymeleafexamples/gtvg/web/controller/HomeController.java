@@ -44,7 +44,7 @@ public class HomeController implements IGTVGController {
         WebContext ctx = new WebContext(request, response, servletContext, request.getLocale());
         ctx.setVariable("today", Calendar.getInstance());
         
-        templateEngine.process("home", ctx, response.getWriter());
+        templateEngine.process("index", ctx, response.getWriter());
         
     }
 
